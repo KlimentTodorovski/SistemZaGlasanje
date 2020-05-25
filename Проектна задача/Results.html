@@ -62,11 +62,30 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col">
                 <div class="card my-4">
-                    <div class="card-header"><i class="fas fa-chart-pie mr-1"></i>Pie Chart Example</div>
-                    <div class="card-body"><canvas id="myPieChart" width="100%" height="50"></canvas></div>
-                    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+                    <div class="card-header">
+                        <i class="fas fa-chart-pie mr-1"></i>
+                        Резултати
+                    </div>
+                    <div class="card-body">
+                        <canvas id="pieResultsVoting" width="100%" height="50"></canvas>
+                    </div>
+                    <div class="card-footer small text-muted">Ажурирано во 12:00 часот</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card my-4">
+                    <div class="card-header">
+                        <i class="fas fa-chart-bar mr-1"></i>
+                        Излезеност
+                    </div>
+                    <div class="card-body">
+                        <canvas id="barResultsTurnout" width="100%" height="50"></canvas>
+                    </div>
+                    <div class="card-footer small text-muted">Ажурирано во 12:00 часот</div>
                 </div>
             </div>
         </div>
@@ -81,7 +100,8 @@
     <script src="bootstrap-4.5.0-dist/js/jquery-3.4.1.slim.min.js"></script>
     <script src="bootstrap-4.5.0-dist/js/popper.min.js"></script>
     <script src="bootstrap-4.5.0-dist/js/bootstrap.js"></script>
-    <script src="bootstrap-4.5.0-dist/chartjs/Chart.min.css"></script>
-    <script src="bootstrap-4.5.0-dist/chartjs/chart-pie-demo.js"></script>
+    <script src="bootstrap-4.5.0-dist/chartjs/Chart.js"></script>
+    <script src="bootstrap-4.5.0-dist/chartjs/pieResultsVoting.js"></script>
+    <script src="bootstrap-4.5.0-dist/chartjs/barResultsTurnout.js"></script>
 </body>
 </html>
