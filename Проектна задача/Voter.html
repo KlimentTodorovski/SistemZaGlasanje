@@ -73,6 +73,7 @@
                 <h5>Датум на раѓање: 10.08.1998</h5>
                 <h5>Адреса на живеење:</h5>
                 <h5>ул.Павлиш Дол бр.1 Македонска Каменица</h5>
+                <button class="btn btn-info btn-block mt-4" id="glasaj">Гласај</button>
             </div>
         </div>
     </div>
@@ -88,3 +89,9 @@
     <script src="bootstrap-4.5.0-dist/js/bootstrap.js"></script>
 </body>
 </html>
+
+<script type="text/javascript">
+    document.getElementById("glasaj").onclick = function () {
+        location.href = "Voting.html";
+    };
+</script>
