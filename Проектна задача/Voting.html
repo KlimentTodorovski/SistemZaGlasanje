@@ -106,7 +106,7 @@
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn btn-info btn-block">Гласај</button>
+            <button type="button" class="btn btn-info btn-block" data-href="Results.html" data-toggle="modal" data-target="#confirm-delete">Гласај</button>
             </fieldset>
         </div>
     </div>
@@ -125,8 +125,33 @@
         </div>
     </footer>
 
+    <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Дали сте сигурни?
+                </div>
+                <div class="modal-body">
+                    Со клик на копчето „Се согласувам“ вашиот глас ќе биде запишан за избраната партија.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Избриши</button>
+                    <a class="btn btn-primary btn-ok">Се согласувам</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="bootstrap-4.5.0-dist/js/jquery-3.4.1.slim.min.js"></script>
     <script src="bootstrap-4.5.0-dist/js/popper.min.js"></script>
     <script src="bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+
+    <script type="text/javascript">
+        $('#confirm-delete').on('show.bs.modal', function(e) {
+            $(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
+        });
+    </script>
 </body>
 </html>
