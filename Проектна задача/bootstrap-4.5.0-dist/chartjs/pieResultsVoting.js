@@ -3,9 +3,9 @@ var ctx = document.getElementById('pieResultsVoting').getContext('2d');
 var myChart = new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ['Партија број 1', 'Партија број 2', 'Партија број 3', 'Партија број 4'],
+    labels: ['Левица', 'ВМРО-ДПМНЕ', 'СДСМ', 'Обединети за Македонија'],
     datasets: [{
-      data: [42, 30, 22, 5],
+      data: [45, 30, 22, 3],
       backgroundColor: [
         '#02B875',
         '#A997DF',
