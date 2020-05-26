@@ -55,12 +55,16 @@
     <div class="container-fluid">
         <div class="text-center">
             <div id="inside" style="width: 48%; background-color: white;" class="d-inline-block">
-                <h3 class="py-2 bg-info text-white" style="border-bottom: 5px solid; border-top-right-radius: 25px; border-top-left-radius: 25px;">Гласај овде</h3>
+                <h3 class="py-2 bg-info text-white" style="border-bottom: 5px solid; border-top-right-radius: 25px; border-top-left-radius: 25px;">
+                    Гласај овде
+                    <span title="Ставете го вашиот прст на фингерпринтот и притиснете на копчето Вклучи скенер" class="fa fa-question-circle mr-3 float-right"></span>
+                </h3>
                 <img src="img/about-fingerprint.jpg" style="width: 20%; height: 5%; margin-top: 5%; margin-bottom: 5%">
-                <button class="btn btn-info btn-block" type="button" onclick="Redirect">Вклучи скенер</button>
+                <button class="btn btn-info btn-block" id="glasaj">Вклучи скенер</button>
             </div>
         </div>
     </div>
+
 
     <footer class="py-5 text-white fixed-bottom" style="background-color: rgba(0, 0, 0, .85);">
         <div class="container">
@@ -68,11 +72,14 @@
         </div>
     </footer>
 
-
     <script src="bootstrap-4.5.0-dist/js/jquery-3.4.1.slim.min.js"></script>
     <script src="bootstrap-4.5.0-dist/js/popper.min.js"></script>
     <script src="bootstrap-4.5.0-dist/js/bootstrap.js"></script>
-
-
 </body>
 </html>
+
+<script type="text/javascript">
+    document.getElementById("glasaj").onclick = function () {
+        location.href = "Voter.html";
+    };
+</script>
