@@ -7,12 +7,12 @@ var ctx = document.getElementById("barResultsTurnout");
 var myLineChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ["Скопје", "Кавадарци", "Неготино", "Кочани", "Македонска Каменица"],
+        labels: ["Скопје", "Неготино", "Кочани", "Македонска Каменица"],
         datasets: [{
             label: "Излезеност во проценти",
             backgroundColor: "#17a2b8",
             borderColor: "#17a2b8",
-            data: [32, 25, 24, 27, 31],
+            data: [32, 25, 27, 31],
         }],
     },
     options: {

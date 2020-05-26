@@ -2,39 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Voter</title>
     <link href="bootstrap-4.5.0-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap-4.5.0-dist/fontawesome/css/all.css" rel="stylesheet">
-    <link href="bootstrap-4.5.0-dist/css/style.css" rel="stylesheet">
-    <title>Login</title>
 
     <style>
-
         body,html{
             height: 100%;
         }
         body {
-            padding-top: 10%;
+            padding-top: 54px;
             background-image: linear-gradient(white, #deeff5, #ffe8e9);
         }
-
         html * {
             font-family: Arial;
         }
     </style>
+
 </head>
 <body>
-
     <header class="navbar navbar-expand navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, .85);">
         <div class="container">
             <a class="navbar-brand" href="#">Систем за гласање</a>
 
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link">Најава</a>
+                    <li class="nav-item">
+                        <a href="Login.html" class="nav-link">Најава</a>
                     </li>
                     <li class="nav-item">
                         <a href="About.html" class="nav-link">За нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Voting.html" class="nav-link">Гласање</a>
                     </li>
                     <li class="nav-item">
                         <a href="Results.html" class="nav-link">Резултати</a>
@@ -45,19 +45,34 @@
                     <li class="nav-item">
                         <a href="Help.html" class="nav-link">Помош</a>
                     </li>
-
                 </ul>
             </div>
-
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Име на најавен корисник</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Login.html" class="nav-link">
+                        <i class="fa fa-sign-out-alt" title="Одјави се"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
-
-    <div class="container-fluid">
-        <div class="text-center">
-            <div id="inside" style="width: 48%; background-color: white;" class="d-inline-block">
-                <h3 class="py-2 bg-info text-white" style="border-bottom: 5px solid; border-top-right-radius: 25px; border-top-left-radius: 25px;">Гласај овде</h3>
-                <img src="img/about-fingerprint.jpg" style="width: 20%; height: 5%; margin-top: 5%; margin-bottom: 5%">
-                <button class="btn btn-info btn-block">Вклучи скенер</button>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <img src="img/avatar.jpg" class="img img-fluid">
+            </div>
+            <div class="col">
+                <h3 class="pt-3">Гласач: Климент Тодоровски</h3>
+                <hr />
+                <h5>Презиме: Тодоровски</h5>
+                <h5>Име: Климент</h5>
+                <h5>Матичен број: 1008998256475</h5>
+                <h5>Датум на раѓање: 10.08.1998</h5>
+                <h5>Адреса на живеење:</h5>
+                <h5>ул.Павлиш Дол бр.1 Македонска Каменица</h5>
             </div>
         </div>
     </div>
