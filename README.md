@@ -17,6 +17,3 @@
 Инсталација:
   - Симнете го проектот на вашиот компјутер со следната командa:
   - git clone git@github.com:KlimentTodorovski/SistemZaGlasanje
-
-Симнете го проектот на вашиот компјутер со следната командa:
-git clone git@github.com:KlimentTodorovski/SistemZaGlasanje
